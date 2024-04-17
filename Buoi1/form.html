@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="create_book.php" method="POST" enctype="multipart/form-data">
+        <fieldset>
+        <label for="title">Tựa sách: </label> <br>
+        <input type="text" name="title" size="20" /><br />
+        <label for="introduction"></label> Giới thiệu:</label> <br>
+        <textarea name="introduction" cols="40" rows="10"></textarea>
+        <br>
+        <!--Giới hạn file có thể tải lên là 2000000bytes <input type="hidden" name="MAX FILE SIZE" value="2000000" />
+        2MB-->
+        <label for="image_file">Tải một ảnh cho quyển sách này: </label>
+        <input type="file" name="image_file" />
+        </fieldset>
+        <br />
+        <fieldset>
+        <input type="submit" value="Lưu" />
+        <input type="reset" value="Hủy" />
+        </fieldset>
+        </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng ký thành viên</title>
+</head>
+
+<body>
+  <h1 style="color: blue;">THÔNG TIN ĐĂNG KÝ THÀNH VIÊN</h1>
+  <form action="signup.php" method="post">
+    <table>
+      <tr>
+        <th>Họ tên:</th>
+        <td><input type="text" id="hoten" name="hoten" required></td>
+      </tr>
+      <tr>
+        <th>Địa chỉ Email:</th>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <th>Mật khẩu:</th>
+        <td><input type="password" id="matkhau" name="matkhau" required></td>
+      </tr>
+      <tr>
+        <th>Năm sinh:</th>
+        <td><input type="number" id="namsinh" name="namsinh" required></td>
+      </tr>
+      <tr>
+        <th>Giới tính:</th>
+        <td>
+          <input type="radio" id="nam" name="gioitinh" value="Nam" checked>
+          <label for="nam">Nam</label>
+
+          <input type="radio" id="nu" name="gioitinh" value="Nữ">
+          <label for="nu">Nữ</label>
+        </td>
+      </tr>
+      <tr>
+        <td><button type="submit">Đăng ký</button></td>
+        <td><button type="reset">Xoá Form</button></td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>
