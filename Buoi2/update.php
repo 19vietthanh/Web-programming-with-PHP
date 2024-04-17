@@ -85,7 +85,7 @@
 
             // Hiển thị form cập nhật
             ?>
-                       <form action="update.php" method="post">
+            <form action="update.php" method="post">
                 <label for="hoten">Họ tên:</label>
                 <input type="text" id="hoten" name="hoten" value="<?php echo $row['hoten']; ?>" required>
                 <br>
