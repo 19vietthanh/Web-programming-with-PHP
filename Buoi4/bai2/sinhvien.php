@@ -45,10 +45,10 @@
 
         // Lấy dữ liệu từ bảng sinhvien
         $sql = "SELECT * FROM sinhvien";
-        $result = mysqli_query($conn, $sql);
+        $result= $conn->query($sql);
 
         // Duyệt qua kết quả
-        while ($row = mysqli_fetch_assoc($result)) {
+        while ($row = $result->fetch_assoc()) {
         ?>
             <tr>
                 <td><?php echo $row['STT']; ?></td>
